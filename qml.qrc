@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>OutputLabelsRect.qml</file>
+        <file>PropertyDisplayRect.qml</file>
+        <file>PropertyUnitsRect.qml</file>
+        <file>RadioButtonStyleRect.qml</file>
+        <file>SettingsWindow.qml</file>
+    </qresource>
+</RCC>

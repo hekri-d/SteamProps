@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>js/CallCppEngineJS.js</file>
+        <file>js/RadioButtonUpdateJS.js</file>
+        <file>js/InputUnitsUpdateJS.js</file>
+        <file>js/CallCppEngineL.js</file>
+        <file>js/CallCppEngineV.js</file>
+    </qresource>
+</RCC>
