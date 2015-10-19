@@ -84,8 +84,11 @@ TESTED - WORKING ON
 -------------------
 
 -Linux Mint 17.2 Rafaela, Cinnamon edition 64 bit.
+
 -LXLE 64 bit.
+
 -Lubuntu 14.04 LTS 64 bit.
+
 -OpenSUSE x64
 
 Although not tested it should also work on other Ubuntu or Debian (x64) derivatives.
