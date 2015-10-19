@@ -129,33 +129,6 @@ void MySteamClass::setState_TemperatureQuality(double temp, double qual){
     specificEntropy = freesteam_s(state);
     viscosity= freesteam_mu(state);
 
-
-    state = freesteam_set_Tx(temp, 0.0);
-
-    pressureL = freesteam_p(state);
-    specificEnthalpyL = freesteam_h(state);              //set the properties
-    specificInternalEnergyL = freesteam_u(state);
-    specificVolumeL = freesteam_v(state);
-    densityL= freesteam_rho(state);
-    heatCapacity_CpL=freesteam_cp(state);
-    heatCapacity_CvL= freesteam_cv(state);
-    thermalConductivityL= freesteam_k(state);
-    specificEntropyL = freesteam_s(state);
-    viscosityL= freesteam_mu(state);
-
-    state = freesteam_set_Tx(temp, 1.0);
-
-    pressureV = freesteam_p(state);
-    specificEnthalpyV = freesteam_h(state);              //set the properties
-    specificInternalEnergyV = freesteam_u(state);
-    specificVolumeV = freesteam_v(state);
-    densityV= freesteam_rho(state);
-    heatCapacity_CpV=freesteam_cp(state);
-    heatCapacity_CvV= freesteam_cv(state);
-    thermalConductivityV= freesteam_k(state);
-    specificEntropyV = freesteam_s(state);
-    viscosityV= freesteam_mu(state);
-
 }
 
 
@@ -178,36 +151,6 @@ void MySteamClass::setState_PressureQuality(double pres, double qual){
     viscosity= freesteam_mu(state);
     temperature = freesteam_T(state);
 
-
-    state = freesteam_set_Tx(pres, 0.0);
-
-    specificEnthalpyL = freesteam_h(state);              //set the properties
-    specificInternalEnergyL = freesteam_u(state);
-    specificVolumeL = freesteam_v(state);
-    densityL= freesteam_rho(state);
-    heatCapacity_CpL=freesteam_cp(state);
-    heatCapacity_CvL= freesteam_cv(state);
-    thermalConductivityL= freesteam_k(state);
-    specificEntropyL = freesteam_s(state);
-    viscosityL= freesteam_mu(state);
-    temperature = freesteam_T(state);
-
-
-    state = freesteam_set_Tx(pres, 1.0);
-
-    specificEnthalpyV = freesteam_h(state);              //set the properties
-    specificInternalEnergyV = freesteam_u(state);
-    specificVolumeV = freesteam_v(state);
-    densityV= freesteam_rho(state);
-    heatCapacity_CpV=freesteam_cp(state);
-    heatCapacity_CvV= freesteam_cv(state);
-    thermalConductivityV= freesteam_k(state);
-    specificEntropyV = freesteam_s(state);
-    viscosityV= freesteam_mu(state);
-    temperature = freesteam_T(state);
-
-
-
 }
 
                                              //-----------GETTERS----------\\
@@ -216,171 +159,49 @@ void MySteamClass::setState_PressureQuality(double pres, double qual){
                                                       regionVariable =1 --> Mixed;
                                                       regionVariable =2 --> Vapor  */
 
-double MySteamClass::getSpecificEnthalpy(const int regionVariable){
-
-    switch (regionVariable) {
-    case 0:
-        return specificEnthalpyL;
-        break;
-    case 1:
-        return specificEnthalpy;
-        break;
-    case 2:
-        return specificEnthalpyV;
-    }
-
+double MySteamClass::getSpecificEnthalpy(){
+    return specificEnthalpy;
 }
 
-
- double MySteamClass::getSpecificEntropy(const int regionVariable){
-
-     switch (regionVariable) {
-     case 0:
-         return specificEntropyL;
-         break;
-     case 1:
-         return specificEntropy;
-         break;
-     case 2:
-         return specificEntropyV;
-     }
-
+ double MySteamClass::getSpecificEntropy(){
+     return specificEntropy;
  }
 
- double MySteamClass::getInternalEnergy(const int regionVariable){
-
-     switch (regionVariable) {
-     case 0:
-         return specificInternalEnergyL;
-         break;
-     case 1:
-         return specificInternalEnergy;
-         break;
-     case 2:
-         return specificInternalEnergyV;
-     }
+ double MySteamClass::getInternalEnergy(){
+     return specificInternalEnergy;
  }
 
- double MySteamClass::getSpecificVolume(const int regionVariable){
-
-     switch (regionVariable) {
-     case 0:
-         return specificVolumeL;
-         break;
-     case 1:
-         return specificVolume;
-         break;
-     case 2:
-         return specificVolumeV;
-     }
+ double MySteamClass::getSpecificVolume(){
+     return specificVolume;
  }
 
- double MySteamClass::getHeatCapacity_Cp(const int regionVariable){
-
-     switch (regionVariable) {
-     case 0:
-         return heatCapacity_CpL;
-         break;
-     case 1:
-         return heatCapacity_Cp;
-         break;
-     case 2:
-         return heatCapacity_CpV;
-     }
+ double MySteamClass::getHeatCapacity_Cp(){
+     return heatCapacity_Cp;
  }
 
- double MySteamClass::getHeatCapacity_Cv(const int regionVariable){
-
-     switch (regionVariable) {
-     case 0:
-         return heatCapacity_CvL;
-         break;
-     case 1:
-         return heatCapacity_Cv;
-         break;
-     case 2:
-         return heatCapacity_CvV;
-     }
+ double MySteamClass::getHeatCapacity_Cv(){
+     return heatCapacity_Cv;
  }
 
- double MySteamClass::getQuality(const int regionVariable){
-
-     switch (regionVariable) {
-     case 0:
-         return qualityL;
-         break;
-     case 1:
-         return quality;
-         break;
-     case 2:
-         return qualityV;
-     }
+ double MySteamClass::getQuality(){
+     return quality;
  }
 
- double MySteamClass::getThermalConductivity(const int regionVariable){
-
-     switch (regionVariable) {
-     case 0:
-         return thermalConductivityL;
-         break;
-     case 1:
-         return thermalConductivity;
-         break;
-     case 2:
-         return thermalConductivityV;
-     }
+ double MySteamClass::getThermalConductivity(){
+     return thermalConductivity;
  }
 
- double MySteamClass::getViscosity(const int regionVariable){
-
-     switch (regionVariable) {
-     case 0:
-         return viscosityL;
-         break;
-     case 1:
-         return viscosity;
-         break;
-     case 2:
-         return viscosityV;
-     }
+ double MySteamClass::getViscosity(){
+     return viscosity;
  }
-double MySteamClass::getDensity(const int regionVariable){
 
-    switch (regionVariable) {
-    case 0:
-        return densityL;
-        break;
-    case 1:
-        return density;
-        break;
-    case 2:
-        return densityV;
-    }
+double MySteamClass::getDensity(){
+    return density;
 }
-double MySteamClass::getTemperature(const int regionVariable){
-
-    switch (regionVariable) {
-    case 0:
-        return temperatureL;
-        break;
-    case 1:
-        return temperature;
-        break;
-    case 2:
-        return temperatureV;
-    }
-
+double MySteamClass::getTemperature(){
+    return temperature;
 }
-double MySteamClass::getPressure(const int regionVariable){
 
-    switch (regionVariable) {
-    case 0:
-        return pressureL;
-        break;
-    case 1:
-        return pressure;
-        break;
-    case 2:
-        return pressureV;
-    }
+double MySteamClass::getPressure(){
+    return pressure;
 }

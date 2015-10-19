@@ -37,32 +37,6 @@ private:
     double thermalConductivity;
     double viscosity;
 
-    double pressureV;
-    double temperatureV;
-    double specificEntropyV;
-    double specificEnthalpyV;
-    double specificInternalEnergyV;
-    double specificVolumeV;
-    double densityV;
-    double heatCapacity_CpV;
-    double heatCapacity_CvV;
-    double qualityV;
-    double thermalConductivityV;
-    double viscosityV;
-
-    double pressureL;
-    double temperatureL;
-    double specificEntropyL;
-    double specificEnthalpyL;
-    double specificInternalEnergyL;
-    double specificVolumeL;
-    double densityL;
-    double heatCapacity_CpL;
-    double heatCapacity_CvL;
-    double qualityL;
-    double thermalConductivityL;
-    double viscosityL;
-
     SteamState state;
 
 public:
@@ -76,18 +50,18 @@ public:
     Q_INVOKABLE void setState_TemperatureQuality(double temp, double qual);
     Q_INVOKABLE void setState_PressureQuality(double pres, double qual);
 
-    Q_INVOKABLE double getSpecificEnthalpy(const int regionVariable);
-    Q_INVOKABLE double getSpecificEntropy(const int regionVariable);
-    Q_INVOKABLE double getInternalEnergy(const int regionVariable);
-    Q_INVOKABLE double getSpecificVolume(const int regionVariable);
-    Q_INVOKABLE double getDensity(const int regionVariable);
-    Q_INVOKABLE double getHeatCapacity_Cp(const int regionVariable);
-    Q_INVOKABLE double getHeatCapacity_Cv(const int regionVariable);
-    Q_INVOKABLE double getQuality(const int regionVariable);
-    Q_INVOKABLE double getThermalConductivity(const int regionVariable);
-    Q_INVOKABLE double getViscosity(const int regionVariable);
-    Q_INVOKABLE double getTemperature(const int regionVariable);
-    Q_INVOKABLE double getPressure(const int regionVariable);
+    Q_INVOKABLE double getSpecificEnthalpy();
+    Q_INVOKABLE double getSpecificEntropy();
+    Q_INVOKABLE double getInternalEnergy();
+    Q_INVOKABLE double getSpecificVolume();
+    Q_INVOKABLE double getDensity();
+    Q_INVOKABLE double getHeatCapacity_Cp();
+    Q_INVOKABLE double getHeatCapacity_Cv();
+    Q_INVOKABLE double getQuality();
+    Q_INVOKABLE double getThermalConductivity();
+    Q_INVOKABLE double getViscosity();
+    Q_INVOKABLE double getTemperature();
+    Q_INVOKABLE double getPressure();
 
 
 //    freesteam_se
