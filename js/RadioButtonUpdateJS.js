@@ -1,3 +1,4 @@
+
 function updateRadioButtons() {
 
     if(ptRadioButton.checked){
@@ -13,6 +14,7 @@ function updateRadioButtons() {
         unit2Text.text = "J/kg"
         unit3Text.text = "J/kg"
         unit9Text.text = "%"
+
 
         inputProperty1.placeholderText = "Default is Pa"
         inputProperty2.placeholderText = "Default is K"

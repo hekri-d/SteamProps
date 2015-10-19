@@ -5,5 +5,6 @@
         <file>js/InputUnitsUpdateJS.js</file>
         <file>js/CallCppEngineL.js</file>
         <file>js/CallCppEngineV.js</file>
+        <file>js/DisplayUnitsUpdateJS.js</file>
     </qresource>
 </RCC>

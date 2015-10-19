@@ -12,6 +12,7 @@ import "js/RadioButtonUpdateJS.js" as RadioButtonUpdateJS
 import "js/InputUnitsUpdateJS.js" as InputUnitsUpdateJS
 import "js/CallCppEngineL.js" as CallCppEngineLJS
 import "js/CallCppEngineV.js" as CallCppEngineVJS
+import "js/DisplayUnitsUpdateJS.js" as DisplayUnitsUpdateJS
 
 Window {
     id: root
@@ -474,7 +475,7 @@ Window {
 
     }
 
-    //--------LABELS=START------------\\
+                            //--------LABELS=START------------\\
 
     property double fontsize: label1Rect.width<3*label1Rect.height?label1Rect.width/5.5:label1Rect.height/2
 
@@ -1018,11 +1019,29 @@ Window {
 
 
     Loader {
-        id: settingsPageLoader
+        id: settingsLoader
         width: root.width; height: root.height;
         anchors.fill: parent
         z:1
+
+        onLoaded: {}
     }
+
+
+    property bool setSwitch
+    property bool setBySwitch
+
+    signal recoverSwitch(bool previousState)
+
+    Connections {
+        target: settingsLoader.item
+
+        onSwitchSignal: { (state == true) ? (setBySwitch=true) :(setBySwitch=false); setSwitch = setBySwitch;}
+
+    }
+
+
+
 
     signal updateTitle;
 
@@ -1039,7 +1058,6 @@ Window {
             liquidVaporNote.text = "VAPOR"
         }
     }
-
 
 
 
@@ -1091,7 +1109,11 @@ Window {
             }
 
             updateTitle();
+
+
         }
+
+
     }
 
 
@@ -1123,7 +1145,7 @@ Window {
         }
 
         onClicked:  {
-            settingsPageLoader.source = "SettingsWindow.qml"
+            settingsLoader.source = "SettingsWindow.qml"
         }
     }
 
