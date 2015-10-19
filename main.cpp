@@ -26,15 +26,6 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
-    SteamState statez = freesteam_set_Tx(372,1.0);
-
-    double statezz = freesteam_h(statez);
-
-    MySteamClass entropi;
-
-
-//    qDebug()<<"Fuck you : "<<statezz<<endl;
-//    qDebug()<<"Fuck you again: "<<entropi.getSpecificEnthalpy() <<endl;
-
+    
     return app.exec();
 }
