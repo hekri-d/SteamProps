@@ -70,8 +70,9 @@ HEADERS += \
 
                 #---------------GSL-------INCLUDE---------#
 
-LIBS += -L/home/ihaaaaa/GithubProjects/SteamProps/SteamProps/libs -lgsl
+LIBS += -L/home/ihaaaaa/GitHubProjects/SteamProps/SteamProps/libs -lgsl
 LIBS += -L/home/ihaaaaa/GithubProjects/SteamProps/SteamProps/libs -lgslcblas
+
 
 INCLUDEPATH += $$PWD/libs
 DEPENDPATH += $$PWD/libs
