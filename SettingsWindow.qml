@@ -18,7 +18,7 @@ import QtQuick.Controls.Styles 1.2
             Text {
                 id: title
                 text: qsTr("OPTIONS")
-                font.pixelSize: 25
+                font.pixelSize: backButton.height/2
                 color: "steelblue"
                 font.bold: true
                 anchors.centerIn: parent
@@ -40,7 +40,7 @@ import QtQuick.Controls.Styles 1.2
             Text {
                 id: addKiloPrefixText
                 text: qsTr("ADD KILO PREFIX TO UNITS")
-                font.pixelSize: 18
+                font.pixelSize: backButton.height/3
                 anchors.centerIn: parent
                 color: "steelblue"
             }
@@ -74,7 +74,7 @@ import QtQuick.Controls.Styles 1.2
                             font.bold: true
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.left: parent.left
-                            font.pixelSize: 15
+                            font.pixelSize: backButton.height/3
 
                         }
 
@@ -85,6 +85,7 @@ import QtQuick.Controls.Styles 1.2
                             font.bold: true
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.right: parent.right
+                            font.pixelSize: backButton.height/3
 
                         }
                 }
@@ -96,7 +97,7 @@ import QtQuick.Controls.Styles 1.2
             text: qsTr(" \n SOME MORE OPTIONS COMMING SOON")
             anchors.centerIn: parent
             color: "black"
-            font.pixelSize: 15
+            font.pixelSize: backButton.height/3
         }
 
         Rectangle {
