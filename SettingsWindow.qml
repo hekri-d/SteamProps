@@ -19,7 +19,7 @@ import QtQuick.Controls.Styles 1.2
                 id: title
                 text: qsTr("OPTIONS")
                 font.pixelSize: 25
-                color: "white"
+                color: "steelblue"
                 font.bold: true
                 anchors.centerIn: parent
 
@@ -42,7 +42,7 @@ import QtQuick.Controls.Styles 1.2
                 text: qsTr("ADD KILO PREFIX TO UNITS")
                 font.pixelSize: 18
                 anchors.centerIn: parent
-                color: "white"
+                color: "steelblue"
             }
         }
 
@@ -112,7 +112,7 @@ import QtQuick.Controls.Styles 1.2
                 font.pixelSize: 18
                 anchors.centerIn: parent
 //                font.bold: true
-                color: "white"
+                color: "steelblue"
             }
 
             MouseArea {
@@ -136,7 +136,7 @@ import QtQuick.Controls.Styles 1.2
             Text {
                 id: backText
                 text: qsTr("BACK")
-                color: "white"
+                color: "steelblue"
                 font.pixelSize: 43
                 anchors.centerIn: parent
             }
