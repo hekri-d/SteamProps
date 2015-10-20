@@ -19,6 +19,7 @@ Window {
     visible: true
 
     width: Screen.width/3.2; height: Screen.height/1.8
+//    width: Screen.width; height: Screen.height-topRect.height/1.6
 
     maximumHeight: (Screen.height/1.8)*1.5; maximumWidth: (Screen.width/3.2)*2;
     minimumHeight: Screen.height/1.8;  minimumWidth: Screen.width/3.2;
