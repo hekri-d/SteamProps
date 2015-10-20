@@ -101,26 +101,26 @@ import QtQuick.Controls.Styles 1.2
 
         Rectangle {
             anchors.bottom: backButton.top
-            anchors.bottomMargin: 10
+            anchors.bottomMargin: height*0.1
             width: parent.width
-            height: parent.height/12
+            height: parent.height/10
             color: "black"
 
             Text {
                 id: aboutText
                 text: qsTr("ABOUT")
-                font.pixelSize: 18
+                font.pixelSize: parent.height/2.2
                 anchors.centerIn: parent
 //                font.bold: true
                 color: "steelblue"
             }
 
             MouseArea {
-                id: button
+                id: aboutButton
                 anchors.fill: parent
 
                 onClicked: {
-//                    settingsLoader.source = "About.qml"
+                    settingsLoader.source = "About.qml"
                 }
             }
         }
@@ -130,14 +130,14 @@ import QtQuick.Controls.Styles 1.2
             id: backButton
             anchors.bottom: parent.bottom
             width: parent.width
-            height: parent.height/8
+            height: parent.height/10
             color: "black"
 
             Text {
                 id: backText
                 text: qsTr("BACK")
                 color: "steelblue"
-                font.pixelSize: 43
+                font.pixelSize: parent.height/2
                 anchors.centerIn: parent
             }
 
