@@ -17,7 +17,7 @@ Rectangle {
 
     TextEdit {
         id: aboutText
-        text: qsTr("\n\n   SteamProps is an app that can be used to calculate and display steam properties of water/steam at different thermodynamic states.\n \n Based on the library freesteam 2.1. \n \n Version: 0.9 \n \n License: GPL \n \n Made by: Hekri - hekri.d@gmail.com. \n ")
+        text: qsTr("\n\n   SteamProps is an app that can be used to calculate and display properties of steam/water at different thermodynamic states.\n \n Based on the library freesteam 2.1. \n \n Version: 0.9 \n \n License: GPL \n \n Made by: Hekri - hekri.d@gmail.com. \n ")
 
         anchors.top: aboutTitle.bottom
         anchors.topMargin: parent.height*0.01
@@ -34,9 +34,10 @@ Rectangle {
         anchors.top: aboutText.bottom
         anchors.topMargin: parent.height*0.01
         textFormat: Text.RichText
-        text: "See the <a href=\"https://github.com/\">SteamProps Project website</a>."
+        text: "See the <a href=\"https://github.com/hekri-d/SteamProps\">SteamProps Project website</a>."
         onLinkActivated: Qt.openUrlExternally(link)
         anchors.left: aboutText.left
+        font.pixelSize: parent.height/32
     }
 
     Text {
@@ -47,6 +48,7 @@ Rectangle {
         text: "And the <a href=\"http://freesteam.sourceforge.net/\">freesteam Project website</a>."
         onLinkActivated: Qt.openUrlExternally(link)
         anchors.left: aboutText.left
+        font.pixelSize: parent.height/32
     }
 
 
