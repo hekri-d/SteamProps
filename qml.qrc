@@ -6,5 +6,6 @@
         <file>PropertyUnitsRect.qml</file>
         <file>RadioButtonStyleRect.qml</file>
         <file>SettingsWindow.qml</file>
+        <file>About.qml</file>
     </qresource>
 </RCC>
