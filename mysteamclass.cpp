@@ -155,9 +155,7 @@ void MySteamClass::setState_PressureQuality(double pres, double qual){
 
                                              //-----------GETTERS----------\\
 
-                                                   /* regionVariable =0 --> Liquid;
-                                                      regionVariable =1 --> Mixed;
-                                                      regionVariable =2 --> Vapor  */
+                                                  
 
 double MySteamClass::getSpecificEnthalpy(){
     return specificEnthalpy;
