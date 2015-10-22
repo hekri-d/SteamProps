@@ -20,6 +20,9 @@ automatically calculated and displayed.
 INSTALLATION INSTRUCTIONS
 -------------------------
 
+First method.
+------------
+
 The SteamProps.tar.bz2 contains everything needed to install and run 
 SteamProps.
 
@@ -37,8 +40,16 @@ the SteamProps.sh (or the SteamProps binary) file directly should work too.
 -That's it.Done.
 
 
-SOME TIPS (DESKTOPS)
---------------------
+Second method.
+-------------
+
+Download the .deb package and install with a package manager. Just double(single?) click it acutally.
+
+
+
+
+SOME TIPS
+---------
 
 1.When entering pressure you can choose between the default units which are Pascal(Pa)
 and Kelvin (K).
@@ -49,7 +60,7 @@ you'll be using bar as units, if not the default units (pascal) will be used.
 celsius as units otherwise the default (kelvin) will be used.
 
 3.Tap spacebar twice to calculate. This can be used as a shortcut so that you don't
-need to use the mouse all the time.
+need to use the mouse all the time [Desktop only].
 
 
 
