@@ -43,7 +43,7 @@ the SteamProps.sh (or the SteamProps binary) file directly should work too.
 Second method.
 -------------
 
-Download the .deb package and install with a package manager. Just double(single?) click it acutally.
+Download the .deb package and install with a package manager. Just double(single?) click it actually.
 
 
 
