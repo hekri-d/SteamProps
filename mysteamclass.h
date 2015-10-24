@@ -41,14 +41,14 @@ private:
 
 public:
 
-    Q_INVOKABLE void setState_PressureTemperature(double &pres, double &temp);
-    Q_INVOKABLE void setState_PressureSpecificInternalEnergy(double &pres, double &intEn);
-    Q_INVOKABLE void setState_PressureSpecificEntropy(double &pres, double &entrop);
-    Q_INVOKABLE void setState_PressureSpecificEnthalpy(double &pres, double &enthalp);
-    Q_INVOKABLE void setState_PressureSpecificVolume(double &pres, double &enthalp);
-    Q_INVOKABLE void setState_TemperatureSpecificEntropy(double &temp, double &entrop);
-    Q_INVOKABLE void setState_TemperatureQuality(double &temp, double &qual);
-    Q_INVOKABLE void setState_PressureQuality(double &pres, double &qual);
+    Q_INVOKABLE void setState_PressureTemperature(double pres, double temp);
+    Q_INVOKABLE void setState_PressureSpecificInternalEnergy(double pres, double intEn);
+    Q_INVOKABLE void setState_PressureSpecificEntropy(double pres, double entrop);
+    Q_INVOKABLE void setState_PressureSpecificEnthalpy(double pres, double enthalp);
+    Q_INVOKABLE void setState_PressureSpecificVolume(double pres, double enthalp);
+    Q_INVOKABLE void setState_TemperatureSpecificEntropy(double temp, double entrop);
+    Q_INVOKABLE void setState_TemperatureQuality(double temp, double qual);
+    Q_INVOKABLE void setState_PressureQuality(double pres, double qual);
 
 
     Q_INVOKABLE double getSpecificEnthalpy();
