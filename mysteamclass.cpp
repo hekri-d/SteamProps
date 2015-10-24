@@ -7,7 +7,7 @@ MySteamClass::MySteamClass(QObject *parent) : QObject(parent)
 }
 
 
-void MySteamClass::setState_PressureTemperature(double pres, double temp){
+void MySteamClass::setState_PressureTemperature(double &pres, double &temp){
     pressure = pres ;    temperature = temp;
 
     state = freesteam_set_pT(pres, temp);
@@ -24,7 +24,7 @@ void MySteamClass::setState_PressureTemperature(double pres, double temp){
     viscosity= freesteam_mu(state);
 }
 
-void MySteamClass::setState_PressureSpecificInternalEnergy(double pres, double intEn){
+void MySteamClass::setState_PressureSpecificInternalEnergy(double &pres, double &intEn){
 
     pressure = pres;  specificInternalEnergy = intEn;
 
@@ -42,7 +42,7 @@ void MySteamClass::setState_PressureSpecificInternalEnergy(double pres, double i
     viscosity= freesteam_mu(state);
 }
 
-void MySteamClass::setState_PressureSpecificEntropy(double pres, double entrop){
+void MySteamClass::setState_PressureSpecificEntropy(double &pres, double &entrop){
      pressure = pres;  specificEntropy = entrop;
 
      state = freesteam_set_ps(pressure, specificEntropy);
@@ -61,7 +61,7 @@ void MySteamClass::setState_PressureSpecificEntropy(double pres, double entrop){
 
 
 
-void MySteamClass::setState_PressureSpecificEnthalpy(double pres, double enthalp){
+void MySteamClass::setState_PressureSpecificEnthalpy(double &pres, double &enthalp){
     pressure = pres; specificEnthalpy =  enthalp;
 
     state = freesteam_set_ph(pres, enthalp);
@@ -78,7 +78,7 @@ void MySteamClass::setState_PressureSpecificEnthalpy(double pres, double enthalp
     viscosity= freesteam_mu(state);
 }
 
-void MySteamClass::setState_PressureSpecificVolume(double pres, double vol){
+void MySteamClass::setState_PressureSpecificVolume(double &pres, double &vol){
     pressure = pres;  specificVolume = vol;
 
     state = freesteam_set_pv(pressure,specificVolume);
@@ -95,7 +95,7 @@ void MySteamClass::setState_PressureSpecificVolume(double pres, double vol){
     viscosity= freesteam_mu(state);
 }
 
-void MySteamClass::setState_TemperatureSpecificEntropy(double temp, double entrop){
+void MySteamClass::setState_TemperatureSpecificEntropy(double &temp, double &entrop){
     temperature = temp;   specificEntropy = entrop;
 
     state = freesteam_set_Ts(temperature, specificEntropy);
@@ -112,7 +112,7 @@ void MySteamClass::setState_TemperatureSpecificEntropy(double temp, double entro
     viscosity= freesteam_mu(state);
 }
 
-void MySteamClass::setState_TemperatureQuality(double temp, double qual){
+void MySteamClass::setState_TemperatureQuality(double &temp, double &qual){
     temperature = temp;  quality = qual;
 
     state = freesteam_set_Tx(temp, qual);
@@ -132,7 +132,7 @@ void MySteamClass::setState_TemperatureQuality(double temp, double qual){
 }
 
 
-void MySteamClass::setState_PressureQuality(double pres, double qual){
+void MySteamClass::setState_PressureQuality(double &pres, double &qual){
     pressure = pres;  quality = qual;
 
     pres = freesteam_region4_Tsat_p (pres);
