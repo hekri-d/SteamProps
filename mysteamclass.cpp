@@ -1,10 +1,14 @@
 #include "mysteamclass.h"
 
+#include <QQmlComponent>
+#include <QQmlProperty>
+
 
 MySteamClass::MySteamClass(QObject *parent) : QObject(parent)
 {
 
 }
+
 
 
 void MySteamClass::setState_PressureTemperature(double pres, double temp){
@@ -22,6 +26,8 @@ void MySteamClass::setState_PressureTemperature(double pres, double temp){
     quality= freesteam_x(state);
     thermalConductivity= freesteam_k(state);
     viscosity= freesteam_mu(state);
+
+
 }
 
 void MySteamClass::setState_PressureSpecificInternalEnergy(double pres, double intEn){
@@ -157,28 +163,40 @@ void MySteamClass::setState_PressureQuality(double pres, double qual){
 
                                                   
 
-double MySteamClass::getSpecificEnthalpy(){
-    return specificEnthalpy;
+double MySteamClass::getSpecificEnthalpy(bool addKilo){
+
+    if(addKilo == true){return specificEnthalpy/1000; }
+    else { return specificEnthalpy; }
 }
 
- double MySteamClass::getSpecificEntropy(){
-     return specificEntropy;
+ double MySteamClass::getSpecificEntropy(bool addKilo){
+
+     if(addKilo == true){ return specificEntropy/1000; }
+     else { return specificEntropy; }
  }
 
- double MySteamClass::getInternalEnergy(){
-     return specificInternalEnergy;
+ double MySteamClass::getInternalEnergy(bool addKilo){
+
+     if(addKilo == true){ return specificInternalEnergy/1000;}
+     else {return specificInternalEnergy; }
  }
 
- double MySteamClass::getSpecificVolume(){
+ double MySteamClass::getSpecificVolume( /*bool addKilo*/){
+
+//     if(addKilo == true){ return specificVolume/1000; }
      return specificVolume;
  }
 
- double MySteamClass::getHeatCapacity_Cp(){
-     return heatCapacity_Cp;
+ double MySteamClass::getHeatCapacity_Cp(bool addKilo){
+
+     if(addKilo == true){ return heatCapacity_Cp/1000; }
+     else {return  heatCapacity_Cp; }
  }
 
- double MySteamClass::getHeatCapacity_Cv(){
-     return heatCapacity_Cv;
+ double MySteamClass::getHeatCapacity_Cv(bool addKilo){
+
+     if(addKilo == true){ return heatCapacity_Cv/1000; }
+     else {return  heatCapacity_Cv; }
  }
 
  double MySteamClass::getQuality(){
@@ -186,6 +204,7 @@ double MySteamClass::getSpecificEnthalpy(){
  }
 
  double MySteamClass::getThermalConductivity(){
+
      return thermalConductivity;
  }
 
@@ -200,6 +219,8 @@ double MySteamClass::getTemperature(){
     return temperature;
 }
 
-double MySteamClass::getPressure(){
-    return pressure;
+double MySteamClass::getPressure(bool addKilo){
+
+    if (addKilo == true){ return pressure/1000; }
+    else { return pressure; }
 }

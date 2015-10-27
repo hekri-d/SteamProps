@@ -10,12 +10,6 @@ function updateRadioButtons() {
         outputLabel3.text = "Enthalpy"
         outputLabel9.text = "Quality"
 
-        unit1Text.text = "J/kgK"
-        unit2Text.text = "J/kg"
-        unit3Text.text = "J/kg"
-        unit9Text.text = "%"
-
-
         inputProperty1.placeholderText = "Default is Pa"
         inputProperty2.placeholderText = "Default is K"
 
@@ -37,11 +31,6 @@ function updateRadioButtons() {
         outputLabel2.text = "Int. Energy"
         outputLabel3.text = "Enthalpy"
         outputLabel9.text = "Quality"
-
-        unit1Text.text = "K"
-        unit2Text.text = "J/kg"
-        unit3Text.text = "J/kg"
-        unit9Text.text = "%"
 
         inputProperty1.placeholderText = "Default is Pa"
         inputProperty2.placeholderText = "Default is J/kgK"
@@ -66,11 +55,6 @@ function updateRadioButtons() {
         outputLabel3.text = "Entropy"
         outputLabel9.text = "Quality"
 
-        unit1Text.text = "K"
-        unit2Text.text = "J/kg"
-        unit3Text.text = "J/kgK"
-        unit9Text.text = "%"
-
         inputProperty1.placeholderText = "Default is Pa"
         inputProperty2.placeholderText = "Default is J/kg"
 
@@ -94,11 +78,6 @@ function updateRadioButtons() {
         outputLabel3.text = "Enthalpy"
         outputLabel9.text = "Quality"
 
-        unit1Text.text = "K"
-        unit2Text.text = "J/kgK"
-        unit3Text.text = "J/kg"
-        unit9Text.text = "%"
-
         inputProperty1.placeholderText = "Default is Pa"
         inputProperty2.placeholderText = "Default is J/kg"
 
@@ -120,11 +99,6 @@ function updateRadioButtons() {
         outputLabel2.text = "Int. Energy"
         outputLabel3.text = "Enthalpy"
         outputLabel9.text = "Quality"
-
-        unit1Text.text = "Pa"
-        unit2Text.text = "J/kg"
-        unit3Text.text = "J/kg"
-        unit9Text.text = "%"
 
         inputProperty1.placeholderText = "Default is K"
         inputProperty2.placeholderText = "Default is J/kgK"
@@ -149,11 +123,6 @@ function updateRadioButtons() {
         outputLabel3.text = "Enthalpy"
         outputLabel9.text = "Entropy"
 
-        unit1Text.text = "Pa"
-        unit2Text.text = "J/kg"
-        unit3Text.text = "J/kg"
-        unit9Text.text = "J/kgK"
-
         inputProperty1.placeholderText = "Default is K"
         inputProperty2.placeholderText = "%"
 
@@ -175,11 +144,6 @@ function updateRadioButtons() {
         outputLabel2.text = "In. Energy"
         outputLabel3.text = "Enthalpy"
         outputLabel9.text = "Temperature"
-
-        unit1Text.text = "J/kgK"
-        unit2Text.text = "J/kg"
-        unit3Text.text = "J/kg"
-        unit9Text.text = "K"
 
         inputProperty1.placeholderText = "Default is Pa"
         inputProperty2.placeholderText = "%"

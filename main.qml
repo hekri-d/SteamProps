@@ -36,6 +36,14 @@ Window {
 
     }
 
+                                                    //SIGNAL--UPDATES DISPLAY UNITS
+
+    signal displayUnitssignal;
+
+    onDisplayUnitssignal: {
+        DisplayUnitsUpdateJS.displayUnitsUpdateJS();
+    }
+
                   //---------------TOP RECTANGLE--------------\\
 
     Rectangle {id: topRect; color: "#FF8C00"; anchors.left: root.left; anchors.top: root.top;
@@ -1196,6 +1204,9 @@ Window {
 
             }
             updateTitle();
+
+            displayUnitssignal();
+
         }
 
     }

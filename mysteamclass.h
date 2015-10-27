@@ -51,18 +51,18 @@ public:
     Q_INVOKABLE void setState_PressureQuality(double pres, double qual);
 
 
-    Q_INVOKABLE double getSpecificEnthalpy();
-    Q_INVOKABLE double getSpecificEntropy();
-    Q_INVOKABLE double getInternalEnergy();
+    Q_INVOKABLE double getSpecificEnthalpy(bool addKilo);
+    Q_INVOKABLE double getSpecificEntropy(bool addKilo);
+    Q_INVOKABLE double getInternalEnergy(bool addKilo);
     Q_INVOKABLE double getSpecificVolume();
     Q_INVOKABLE double getDensity();
-    Q_INVOKABLE double getHeatCapacity_Cp();
-    Q_INVOKABLE double getHeatCapacity_Cv();
+    Q_INVOKABLE double getHeatCapacity_Cp(bool addKilo);
+    Q_INVOKABLE double getHeatCapacity_Cv(bool addKilo);
     Q_INVOKABLE double getQuality();
     Q_INVOKABLE double getThermalConductivity();
     Q_INVOKABLE double getViscosity();
     Q_INVOKABLE double getTemperature();
-    Q_INVOKABLE double getPressure();
+    Q_INVOKABLE double getPressure(bool addKilo);
 
 
 //    freesteam_se
