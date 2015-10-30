@@ -27,6 +27,10 @@ int main(int argc, char *argv[])
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
 
+//    SteamState state = freesteam_set_pT(200000,400);
+
+//    MySteamClass funk;
+//    funk.funksioni(state);
     
     return app.exec();
 }

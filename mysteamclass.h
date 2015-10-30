@@ -50,7 +50,6 @@ public:
     Q_INVOKABLE void setState_TemperatureQuality(double temp, double qual);
     Q_INVOKABLE void setState_PressureQuality(double pres, double qual);
 
-
     Q_INVOKABLE double getSpecificEnthalpy(bool addKilo);
     Q_INVOKABLE double getSpecificEntropy(bool addKilo);
     Q_INVOKABLE double getInternalEnergy(bool addKilo);
