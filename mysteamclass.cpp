@@ -220,8 +220,8 @@ double MySteamClass::getTemperature(){
     return temperature;
 }
 
-double MySteamClass::getPressure(bool addKilo){
+double MySteamClass::getPressure(){
 
-    if (addKilo == true){ return pressure/1000; }
-    else { return pressure; }
+
+    return pressure;
 }

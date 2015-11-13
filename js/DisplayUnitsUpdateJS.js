@@ -43,8 +43,8 @@ function displayUnitsUpdateJS() {
 
         else {
             unit1Text.text = "K"
-            unit2Text.text = "kJ/kg"
-            unit3Text.text = "kJ/kg"
+            unit2Text.text = "J/kg"
+            unit3Text.text = "J/kg"
             unit9Text.text = "%"
 
             unit6Text.text = "J/kg"
@@ -66,8 +66,8 @@ function displayUnitsUpdateJS() {
 
         else {
             unit1Text.text = "K"
-            unit2Text.text = "kJ/kg"
-            unit3Text.text = "kJ/kgK"
+            unit2Text.text = "J/kg"
+            unit3Text.text = "J/kgK"
             unit9Text.text = "%"
 
             unit6Text.text = "J/kg"
@@ -89,8 +89,8 @@ function displayUnitsUpdateJS() {
 
         else {
             unit1Text.text = "K"
-            unit2Text.text = "kJ/kgK"
-            unit3Text.text = "kJ/kg"
+            unit2Text.text = "J/kgK"
+            unit3Text.text = "J/kg"
             unit9Text.text = "%"
 
             unit6Text.text = "J/kg"
@@ -112,8 +112,8 @@ function displayUnitsUpdateJS() {
 
         else {
             unit1Text.text = "kPa"
-            unit2Text.text = "kJ/kg"
-            unit3Text.text = "kJ/kg"
+            unit2Text.text = "J/kg"
+            unit3Text.text = "J/kg"
             unit9Text.text = "%"
 
             unit6Text.text = "J/kg"
@@ -135,9 +135,9 @@ function displayUnitsUpdateJS() {
 
         else {
             unit1Text.text = "kPa"
-            unit2Text.text = "kJ/kg"
-            unit3Text.text = "kJ/kg"
-            unit9Text.text = "kJ/kgK"
+            unit2Text.text = "J/kg"
+            unit3Text.text = "J/kg"
+            unit9Text.text = "J/kgK"
 
             unit6Text.text = "J/kg"
             unit7Text.text = "J/kg"
@@ -157,9 +157,9 @@ function displayUnitsUpdateJS() {
         }
 
         else {
-            unit1Text.text = "kJ/kgK"
-            unit2Text.text = "kJ/kg"
-            unit3Text.text = "kJ/kg"
+            unit1Text.text = "J/kgK"
+            unit2Text.text = "J/kg"
+            unit3Text.text = "J/kg"
             unit9Text.text = "K"
 
             unit6Text.text = "J/kg"

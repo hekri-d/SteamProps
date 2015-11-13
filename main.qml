@@ -1113,8 +1113,8 @@ Window {
                 noteText.text = "Inputs shouldn't be empty!"
                 noteText.color = "red"
             }
-            else {
-            CallCppEngineLJS.callCppL()
+            else {                
+                CallCppEngineLJS.callCppL()
             }
 
             updateTitle();
