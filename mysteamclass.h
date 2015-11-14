@@ -61,7 +61,7 @@ public:
     Q_INVOKABLE double getThermalConductivity();
     Q_INVOKABLE double getViscosity();
     Q_INVOKABLE double getTemperature();
-    Q_INVOKABLE double getPressure();
+    Q_INVOKABLE double getPressure(bool addKilo);
 
 
 signals:

@@ -3,7 +3,7 @@ function callCppL() {
      if(txRadioButton.checked){
         fromMyClass.setState_TemperatureQuality(input1, 0.0);
 
-         propertyDisplay1Text.text = fromMyClass.getPressure().toFixed(2);
+         propertyDisplay1Text.text = fromMyClass.getPressure(setBySwitch).toFixed(2);
          propertyDisplay2Text.text = fromMyClass.getInternalEnergy(setBySwitch).toFixed(2);
          propertyDisplay3Text.text = fromMyClass.getSpecificEnthalpy(setBySwitch).toFixed(2)
 

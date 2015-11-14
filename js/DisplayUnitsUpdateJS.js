@@ -124,17 +124,17 @@ function displayUnitsUpdateJS() {
     else if(txRadioButton.checked){
 
         if (setBySwitch == true) {
-            unit1Text.text = "kJ/kgK"
+            unit1Text.text = "kPa"
             unit2Text.text = "kJ/kg"
             unit3Text.text = "kJ/kg"
-            unit9Text.text = "%"
+            unit9Text.text = "J/kg"
 
             unit6Text.text = "kJ/kg"
             unit7Text.text = "kJ/kg"
         }
 
         else {
-            unit1Text.text = "kPa"
+            unit1Text.text = "Pa"
             unit2Text.text = "J/kg"
             unit3Text.text = "J/kg"
             unit9Text.text = "J/kgK"
@@ -150,7 +150,7 @@ function displayUnitsUpdateJS() {
             unit1Text.text = "kJ/kgK"   //fix it
             unit2Text.text = "kJ/kg"
             unit3Text.text = "kJ/kg"
-            unit9Text.text = "%"
+            unit9Text.text = "K"
 
             unit6Text.text = "kJ/kg"
             unit7Text.text = "kJ/kg"
