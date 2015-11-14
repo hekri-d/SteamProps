@@ -18,6 +18,7 @@ Window {
     id: root
     visible: true
 
+
     width: Screen.width/3.2; height: Screen.height/1.8
 //    width: Screen.width; height: Screen.height-topRect.height/1.6
 
@@ -1119,6 +1120,7 @@ Window {
 
             updateTitle();
 
+            displayUnitssignal();
 
         }
 
@@ -1287,6 +1289,8 @@ Window {
             }
 
             updateTitle()
+
+            displayUnitssignal();
         }
     }
 

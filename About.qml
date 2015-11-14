@@ -17,7 +17,7 @@ Rectangle {
 
     TextEdit {
         id: aboutText
-        text: qsTr("\n\n   SteamProps is an app that can be used to calculate and display properties of steam/water at different thermodynamic states.\n \n Based on the library freesteam 2.1. \n \n Version: 0.9 \n \n License: GPL \n \n Made by: Hekri - hekri.d@gmail.com. \n ")
+        text: qsTr("\n\n   SteamProps is an app that can be used to calculate and display properties of steam/water at different thermodynamic states.\n \n Based on the library freesteam 2.1. \n \n Version: 1.0 \n \n License: GPL \n \n Made by: Hekri - hekri.d@gmail.com. \n ")
 
         anchors.top: aboutTitle.bottom
         anchors.topMargin: parent.height*0.01

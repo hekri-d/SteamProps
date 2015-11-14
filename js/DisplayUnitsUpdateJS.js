@@ -147,7 +147,7 @@ function displayUnitsUpdateJS() {
 
 
         if (setBySwitch == true) {
-            unit1Text.text = "kJ/kgK"
+            unit1Text.text = "kJ/kgK"   //fix it
             unit2Text.text = "kJ/kg"
             unit3Text.text = "kJ/kg"
             unit9Text.text = "%"
